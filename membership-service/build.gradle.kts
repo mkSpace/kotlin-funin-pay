@@ -1,13 +1,6 @@
 plugins {
     kotlin("jvm")
-
-}
-
-group = "com.funin"
-version = "0.0.1-SNAPSHOT"
-
-repositories {
-    mavenCentral()
+    id("kotlin-jpa")
 }
 
 dependencies {
@@ -21,9 +14,8 @@ dependencies {
     runtimeOnly("com.h2database:h2")
 }
 
-tasks.test {
-    useJUnitPlatform()
-}
-kotlin {
-    jvmToolchain(21)
+allOpen {
+    annotation("jakarta.persistence.Entity")
+    annotation("jakarta.persistence.MappedSuperclass")
+    annotation("jakarta.persistence.Embeddable")
 }
