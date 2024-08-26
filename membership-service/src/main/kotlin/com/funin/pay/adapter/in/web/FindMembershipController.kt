@@ -2,8 +2,8 @@ package com.funin.pay.adapter.`in`.web
 
 import com.funin.pay.application.port.`in`.FindMembershipCommand
 import com.funin.pay.application.port.`in`.FindMembershipUseCase
+import com.funin.pay.common.WebAdapter
 import com.funin.pay.domain.Membership
-import common.WebAdapter
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable

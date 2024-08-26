@@ -6,19 +6,19 @@ import jakarta.persistence.*
 @Table(name = "membership")
 class MembershipJpaEntity(
     @Column(name = "name", nullable = false)
-    val name: String,
+    var name: String,
 
     @Column(name = "address", nullable = false)
-    val address: String,
+    var address: String,
 
     @Column(name = "email", nullable = false)
-    val email: String,
+    var email: String,
 
     @Column(name = "is_valid", nullable = false)
-    val isValid: Boolean,
+    var isValid: Boolean,
 
     @Column(name = "is_corp", nullable = false)
-    val isCorp: Boolean,
+    var isCorp: Boolean,
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY) val id: Long = 0L
 )

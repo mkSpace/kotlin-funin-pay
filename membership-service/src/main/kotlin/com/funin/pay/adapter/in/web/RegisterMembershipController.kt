@@ -2,7 +2,7 @@ package com.funin.pay.adapter.`in`.web
 
 import com.funin.pay.application.port.`in`.RegisterMembershipCommand
 import com.funin.pay.application.port.`in`.RegisterMembershipUseCase
-import common.WebAdapter
+import com.funin.pay.common.WebAdapter
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RestController

@@ -4,7 +4,9 @@ import com.funin.pay.common.SelfValidating
 import jakarta.validation.constraints.AssertTrue
 import jakarta.validation.constraints.NotBlank
 
-class RegisterMembershipCommand(
+class ModifyMembershipCommand(
+    val membershipId: Long,
+
     @field:NotBlank
     val name: String,
 

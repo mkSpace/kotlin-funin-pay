@@ -1,4 +1,4 @@
-package common
+package com.funin.pay.common
 
 import jakarta.validation.ConstraintViolationException
 import jakarta.validation.Validation

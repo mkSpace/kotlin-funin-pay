@@ -4,8 +4,8 @@ import com.funin.pay.adapter.out.persistence.toDomainEntity
 import com.funin.pay.application.port.`in`.FindMembershipCommand
 import com.funin.pay.application.port.`in`.FindMembershipUseCase
 import com.funin.pay.application.port.out.FindMembershipPort
+import com.funin.pay.common.UseCase
 import com.funin.pay.domain.Membership
-import common.UseCase
 import org.springframework.transaction.annotation.Transactional
 
 @UseCase

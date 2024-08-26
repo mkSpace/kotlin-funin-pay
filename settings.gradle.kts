@@ -3,3 +3,4 @@ plugins {
 }
 rootProject.name = "kotlin-funin-pay"
 include("membership-service")
+include("common")

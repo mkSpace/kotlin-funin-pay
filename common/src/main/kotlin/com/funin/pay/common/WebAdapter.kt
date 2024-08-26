@@ -1,13 +1,15 @@
-package common
+package com.funin.pay.common
 
 import org.springframework.core.annotation.AliasFor
 import org.springframework.stereotype.Component
+import kotlin.annotation.AnnotationRetention.RUNTIME
+import kotlin.annotation.AnnotationTarget.CLASS
 
-@Target(AnnotationTarget.CLASS)
-@Retention(AnnotationRetention.RUNTIME)
+@Target(CLASS)
+@Retention(RUNTIME)
 @MustBeDocumented
 @Component
-annotation class PersistenceAdapter(
+annotation class WebAdapter(
 
     /**
      * The value may indicate a suggestion for a logical component name,
